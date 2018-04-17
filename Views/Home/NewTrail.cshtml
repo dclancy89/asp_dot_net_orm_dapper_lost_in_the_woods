@@ -1,0 +1,25 @@
+@model LostInTheWoods.Models.NewTrailViewModel
+
+<h1 class="title">Add A New Trail</h1>
+<form asp-controller="Home" asp-action="AddTrail" method="post" id="new_trail">
+    <label asp-for="TrailName"></label>
+    <input asp-for="TrailName">
+
+    <label asp-for="Description"></label>
+    <textarea asp-for="Description"></textarea>
+
+    <label asp-for="TrailLength"></label>
+    <input asp-for="TrailLength">
+
+    <label asp-for="ElevationGain"></label>
+    <input asp-for="ElevationGain">
+
+    <label asp-for="Lattitude"></label>
+    <input asp-for="Lattitude">
+
+    <label asp-for="Longitude"></label>
+    <input asp-for="Longitude">
+
+    <input type="submit" value="Add New Trail" class="button">
+
+</form>

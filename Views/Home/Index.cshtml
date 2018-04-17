@@ -1,0 +1,27 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+<h1 class="title">Lost In The Woods</h1>
+<p class="subtitle">List of local hiking trails.</p>
+<p>@ViewBag.Error</p>
+<table>
+    <thead>
+        <th>Trail Name</th>
+        <th>Trail Length</th>
+        <th>Elevation Change</th>
+    </thead>
+    <tbody>
+        @{
+            foreach(var trail in @ViewBag.Trails)
+            {
+                <tr>
+                    <td><a href="/trails/@trail.Id">@trail.TrailName</a></td>
+                    <td>@trail.TrailLength</td>
+                    <td>@trail.ElevationGain</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+
+<p><a href="NewTrail" class="button">Add a new Trail</a></p>

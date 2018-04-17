@@ -1,0 +1,38 @@
+/*Write all of your CSS here*/
+h1.title {
+    display: inline-block;
+}
+
+p.subtitle {
+    display: inline-block;
+    margin-left: 2rem;
+}
+
+.button {
+    display: table;
+    margin-top: 1rem;
+    background-color: #fff;
+    border: 2px solid black;
+    color: black;
+    text-decoration: none;
+    padding: 4px 12px;
+    box-shadow: 1px 1px 2px black;
+    transition: all 0.2s ease 0s;
+}
+
+.button:hover {
+    box-shadow: none;
+    transform: translate(1px,1px);
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+form#new_trail label {
+    display: block;
+    margin-top: 0.5rem;
+}
+
+table tr th, table tr td {
+    padding: 0.3rem 1rem;
+}
